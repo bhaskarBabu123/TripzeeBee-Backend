@@ -53,7 +53,7 @@ router.post('/create-order', auth, async (req, res) => {
         bookingId: existingBooking._id,
         amount: totalPrice,
         currency: 'INR',
-        key: "rzp_test_RsGQ0EyONIWnyi",
+        key: "rzp_test_SpK8zl78AdsEAr",
         message: 'Reusing existing pending booking'
       });
     }
@@ -91,7 +91,7 @@ router.post('/create-order', auth, async (req, res) => {
       bookingId: booking._id,
       amount: totalPrice,
       currency: 'INR',
-      key: "rzp_test_RsGQ0EyONIWnyi"
+      key: "rzp_test_SpK8zl78AdsEAr"
     });
   } catch (error) {
     console.error(error);
