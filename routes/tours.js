@@ -190,8 +190,7 @@ router.post('/:id/review', auth, async (req, res) => {
 router.post('/', adminAuth, async (req, res) => {
   try {
     const tourData = {
-      ...req.body,
-      video:'https://youtu.be/kRZLUCWswlw?si=jkUnWq8Vqb4KLbe3'
+      ...req.body
     };
     
     // Generate tour code
