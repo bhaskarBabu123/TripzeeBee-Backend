@@ -2,7 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
-
+console.log("Razorpay Key:", process.env.RAZORPAY_KEY_ID);
+console.log("Secret Loaded:", !!process.env.RAZORPAY_KEY_SECRET);
 const authRoutes = require("./routes/auth");
 const tourRoutes = require("./routes/tours");
 const bookingRoutes = require("./routes/bookings");
